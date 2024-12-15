@@ -1,0 +1,28 @@
+﻿  project: dqcl
+  architecture: "hybrid"
+  application_type: qrunner
+  
+  project_dataSourceUrl: "jdbc:postgresql://devops-pg:5432"
+
+  # Параметры, отвечающие за копирование схем базы данных при создании нового стенда
+  defaultPrefix: "DOREF_"
+  defaultInfix: "PLATFORM, dqclientregexchange"
+  dumpdatabase_threads: "1"
+  
+  gateway_rulelist_exist: "true"
+  
+  # Параметры, отвечающие за создание внешних ссылок на сервисы
+  create_route_web: "true"
+  create_route_weblogic: "false"
+  create_route_wf_console: "false"
+  
+  module_list_from_file: "true"
+  qr_k8s_host: qrunfin.diasoft.ru
+  qr_k8s_port: "6443"
+  qr_k8s_user_token: eyJhbGciOiJSUzI1NiIsImtpZCI6IkZmRXhfVzBJLVd3QkFNTEQ0NW9DOWx1VXdGUWN5Mm0xVHhpbmdqR1NLOVkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkcWNsLWRxY2wiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiZHFjbC1kcWNsLWFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZHFjbC1kcWNsLWFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIwNmIyZDhmMS1hMjY0LTQ5MjktOWFmZC03YjY5ZmM5ZGE4YmYiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZHFjbC1kcWNsOmRxY2wtZHFjbC1hZG1pbi11c2VyIn0.o_C95uyeMLBWqI46KJgA5cBIln9piKJufVorHXNFjhIruFrlkA0aro5nxLzV8VMfmpeIJjweHqhPTmPInBBUD_qo3MTlYUoHlMwPWMOn9m5ylDPEcRzgCTuthHNf1WQFoLuZ3a-2Yj26ISUHOLZTMT1IAolvOsE8U9qmeLHObdGYRYEAFRtwedXKa_fYZhPV0f3yeZqeeTl_lSQ_stYc_XTcALDfRS9b2Z7sCMRgOTkucwV9AJ87UNyIz_RFsGSgn3luyHZc1ILi65l0r8vNs8HCoMayax0jR7xo2Rologm5ETVBVvmwS0Q50HjCF-rIhzsSuLkht6B_rOzovY8zrQ
+  ns_prj_node_selector: "dep=fin"
+  ns_prj_team: "FA-SM Биржевой и Внебиржевой рынки ЦБ"
+  ns_prj_devops: "$devopsEmail"
+
+  use_name_prefix: "false"
+  discovery_service: kubernetes

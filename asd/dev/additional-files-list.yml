@@ -1,0 +1,19 @@
+﻿dqfmsec: [
+        {
+          destination_dir: /share/config,
+          files: "dqcl.truststore, dqcl.keystore, keystore.jks"
+        }
+      ]
+dqadpnsdmd: [
+        {
+          destination_dir: /share/config,
+          files: "dqcl.truststore, dqcl.keystore, keystore.jks"
+        }
+      ]
+
+qfmdmsecurity: [
+        {
+          destination_dir: /share/config,
+          files: "security.jrxml"
+        }
+      ]

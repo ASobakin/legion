@@ -1,0 +1,13 @@
+#{% set common_params = '--url=' + project_dataSourceUrl + ' --database=' + db_instance + 'FRONTPLATF --username=' + db_instance + 'FRONTPLATF --password=12345678  --frontws2=http://' + host + '-frontws2:8080/frontws2/frontws2 --corews=http://' + host + '-corews:8080/corews/corews --srvLogin=dsa --srvPassword=12345678 --driver=oracle.jdbc.driver.OracleDriver' %}
+
+#{{wait_for_wsdl}} http://{{host}}-corews:8080/corews/corews
+#{{wait_for_wsdl}} http://{{host}}-crmws:8080/crmws/crmws
+#{{wait_for_wsdl}} http://{{host}}-frontws2:8080/frontws2/frontws2
+#{{wait_for_wsdl}} http://{{host}}-ftschedws:8080/ftschedws/ftschedws
+
+# Знак "&" в конце строк необходим для параллельного запуска проливки
+# Команда "wait" необходима для ожидания окончания всех проливок
+#{{update_datainstall}} crmws {{common_params}} --srvLocale=ru &
+#{{update_datainstall}} frontws2 {{common_params}} --srvLocale=ru &
+#{{update_datainstall}} ftschedws -{{common_params}} --srvLocale=ru &
+wait

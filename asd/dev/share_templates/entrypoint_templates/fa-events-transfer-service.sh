@@ -1,0 +1,1 @@
+/opt/qstreamer/bin/fa-events-transfer-service.sh /opt/qstreamer/config/fa-events-transfer-service.properties

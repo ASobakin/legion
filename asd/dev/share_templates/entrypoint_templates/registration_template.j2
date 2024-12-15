@@ -1,0 +1,13 @@
+#{% set adminws = 'http://' + host + '-adminws:8080/adminws/adminws' %}
+
+#{{wait_for_wsdl}} http://{{host}}-corews:8080/corews/corews?wsdl
+#{{wait_for_wsdl}} http://{{host}}-adminws:8080/adminws/adminws?wsdl
+#{{wait_for_wsdl}} http://{{host}}-webclient:8080/webclient/pages/
+
+#Регистрация модулей: PACKAGENAME (=PACKAGESYSNAME), PACKAGESERVICEPATH, EXTINTEGRATION, ADMINWS URL
+{{register_module}} adminws http://{{host}}-adminws:8080/adminws/adminws true {{adminws}}
+
+#Регистрация проектов: PROJECTSYSNAME, PROJECTTYPE (0 - webclient, 1 - mvc), ADMINWS URL
+#Проекты уже зарегистрированы в дампе БД, поэтому не регистрируем их повторно
+#{{register_project}} frontws2 0 {{adminws}}
+#{{register_project}} frontws2 1 {{adminws}}

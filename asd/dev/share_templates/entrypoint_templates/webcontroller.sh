@@ -1,0 +1,1 @@
+{{wait_for_wsdl}} http://mdpauth:8080/mdpauth/actuator/info

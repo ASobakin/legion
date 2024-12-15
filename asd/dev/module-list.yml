@@ -1,0 +1,170 @@
+﻿# Общие строки
+ modules: [
+      ## систем
+      "dvt/asp/kaf:0.3.3",
+      "dvt/qstreamer:2.05.02",
+      "dvt/asp/kowl:v1.5.0",      
+      #"dvt/digitalq/dev/mdpauth:latest",
+      #"dvt/digitalq/dev/database-mdpauth:latest",
+      "dvt/digitalq/sup/database-mdpauth:9.05.01-22011301",
+      "dvt/digitalq/sup/mdpauth:9.05.01-22011301",
+      "dvt/digitalq/sup/mdpdepartments:9.04.05-21060901",
+      "dvt/digitalq/sup/database-mdpdepartments:9.04.05-21060901",
+      "dvt/digitalq/sup/mdpemployee:9.04.05-21060901",
+      "dvt/digitalq/sup/database-mdpemployee:9.04.05-21060901",
+      "dvt/digitalq/sup/mdpgateway:9.05.01-21122801",
+      "dvt/digitalq/sup/mdproles:9.04.05-21060901",
+      "dvt/digitalq/sup/database-mdproles:9.04.05-21060901",      
+      "dvt/digitalq/sup/mdpsettings:9.04.05-21060901",
+      "dvt/digitalq/sup/database-mdpsettings:9.04.05-21060901",     
+      "dvt/digitalq/sup/mdpusers:9.04.05-21060901",
+      "dvt/digitalq/sup/database-mdpusers:9.04.05-21060901",  
+      "dvt/digitalq/sup/front-ms-adminconsole:9.04.05-21060901",
+      "dvt/digitalq/sup/mdpcurrencies:9.04.05-21082701",
+      "dvt/digitalq/sup/database-mdpcurrencies:9.04.05-21082701",
+      #"dvt/digitalq/sup/mdpsenders:9.05.01-21122801",
+      #"dvt/digitalq/sup/database-mdpsenders:9.05.01-21122801",
+      "dvt/digitalq/dev/mdpsenders:latest",
+      "dvt/digitalq/dev/database-mdpsenders:latest",
+      "dvt/digitalq/sup/mdpaudit:9.05.01-21122801",
+      "dvt/digitalq/sup/database-mdpaudit:9.05.01-21122801",  
+      #"dvt/digitalq/sup/mdpscheduler:9.04.05-21060901",
+      #"dvt/digitalq/sup/database-mdpscheduler:9.04.05-21060901",
+      "dvt/digitalq/dev/qstngsui:latest",
+      
+      # Управление политиками доступа
+      "dvt/digitalq/dev/qaccesspolicy:latest",
+      "dvt/digitalq/dev/database-qaccesspolicy:latest",
+      "dvt/digitalq/dev/qaccesspolicyui:latest",
+
+      ## UI
+      "dvt/dqcl/dev/qdmpuiui:latest",
+      "dvt/dqcl/dev/qfmdmui:latest",
+      "dvt/dqcl/dev/qdmpui:latest",
+
+      #Data Quality
+      "dvt/dqdquality/dev/qdqdesigner:latest",
+      "dvt/dqdquality/dev/database-qdqdesigner:latest",
+      "dvt/dqdquality/dev/qdqplayer:latest",
+      "dvt/dqdquality/dev/database-qdqplayer:latest",
+      "dvt/dqdquality/dev/qdqui:latest",
+      
+      #Data Quality приклад
+      #"dvt/dqdquality/dev/qdqdit:latest",
+      #"dvt/dqdquality/dev/database-qdqdit:latest",
+
+      
+      ##adp
+      "dvt/dqcl/dev/qfmdmadprudata:latest",
+      "dvt/dqcl/dev/database-qfmdmadprudata:latest",
+      "dvt/dqcl/dev/database-qfmdmadpnsd:latest",
+      "dvt/dqcl/dev/qfmdmadpnsd:latest",      
+      "dvt/dqcl/dev/qfmdmadpfa:latest",      
+      "dvt/dqcl/dev/database-qfmdmadpfa:latest",
+      "dvt/dqcl/dev/qdmpadapterfa:latest",  
+      "dvt/dqcl/dev/qfmdmadpmoex:latest",
+      "dvt/dqcl/dev/database-qfmdmadpmoex:latest",
+    
+      ##MDM
+      "dvt/dqcl/dev/qfmdmsecurity:latest",
+      "dvt/dqcl/dev/database-qfmdmsecurity:latest",     
+      "dvt/dqcl/dev/qdmppropertiesqstngsetting:latest",  
+      "dvt/dqcl/dev/database-qdmppropertiesqstngsetting:latest",      
+      "dvt/dqcl/dev/qfmdmvaluematbenefit:latest",
+      "dvt/dqcl/dev/database-qfmdmvaluematbenefit:latest",
+      "dvt/dqcl/dev/qdmpsecurity:latest",
+      "dvt/dqcl/dev/database-qfmdmsecpricecalc:latest",
+      "dvt/dqcl/dev/qfmdmsecpricecalc:latest",
+      "dvt/dqcl/dev/database-qfmdmadpcbonds:latest",
+      "dvt/dqcl/dev/qfmdmadpcbonds:latest",
+
+      ##qfmdmtradingsystem
+      "dvt/dqcl/dev/qfmdmtradingsystem:latest",
+      "dvt/dqcl/dev/database-qfmdmtradingsystem:latest",     
+      
+      
+      ##qdmptradingsystemprofile
+      "dvt/dqcl/dev/qdmptradingsystemprofile:latest",
+      "dvt/dqcl/dev/database-qdmptradingsystemprofile:latest",   
+      
+      
+      ##NDFL
+      "dvt/tax/dev/qbtitransformationipsdividend:latest",
+      "dvt/tax/dev/database-qbtitransformationipsdividend:latest", 
+      "dvt/dqcl/dev/qbitcorpactinffortaxcalc:latest",
+      "dvt/dqcl/dev/database-qbitcorpactinffortaxcalc:latest",
+      "dvt/dqcl/dev/qbitsettingsqsmstatemachine:latest",
+      "dvt/dqcl/dev/database-qbitsettingsqsmstatemachine:latest",
+      "dvt/dqcl/dev/qbitcorpactprocessingfortax:latest",
+      "dvt/dqcl/dev/database-qbitcorpactprocessingfortax:latest",
+
+      ## kesh  
+      "dvt/dqcl/dev/qdmpderivative:latest",      
+      "dvt/dqcl/dev/database-qdmpderivative:latest",
+      "dvt/dqcl/dev/qdmploaderinterestrate:latest",
+      "dvt/dqcl/dev/database-qdmploaderinterestrate:latest",     
+      "dvt/dqcl/dev/qdmpinterestrate:latest",
+      "dvt/dqcl/dev/database-qdmpinterestrate:latest",
+      "dvt/dqcl/dev/qdmploaderderivative:latest",
+      "dvt/dqcl/dev/database-qdmploaderderivative:latest",     
+      "dvt/dqcl/dev/qdmploadercurrency:latest",
+      "dvt/dqcl/dev/database-qdmploadercurrency:latest",
+      "dvt/dqcl/dev/qdmpcurrency:latest",
+      "dvt/dqcl/dev/database-qdmpcurrency:latest",    
+      "dvt/dqcl/dev/qdmploadersecurity:latest",          
+      "dvt/dqdigitalprofile:0.0.6-21092701-with-dbm",
+      
+      ##fa
+      "dvt/fa/referws:9.1-sup-9-01-15-21072904",       
+      "dvt/fa/smcorews:9.1-sup-9-01-10-21102901",
+      "dvt/fa/admws:9.1-FA-Administrator-9-01-9-SP-21121601",
+      "dvt/fa/crmws:9.1-FA-GeneralLedger-9-01-20-SP-21121602",
+      "dvt/faplatform/fa-events-transfer-service:2.0.0-RELEASE",
+
+      ##nologi 
+      "dvt/tax/test/qbitui:latest",
+      "dvt/tax/test/qbitpurchasepriceconfirmation:latest",
+      "dvt/tax/test/database-qbitpurchasepriceconfirmation:latest",
+      "dvt/tax/test/dqiitctpos:latest",
+      "dvt/tax/test/database-dqiitctpos:latest",
+      "dvt/tax/test/dqiitctppl:latest",
+      "dvt/tax/test/database-dqiitctppl:latest",
+      "dvt/tax/test/dqiitrdiae:latest",
+      "dvt/tax/test/database-dqiitrdiae:latest",
+      "dvt/tax/test/dqiitdviae:latest",
+      "dvt/tax/test/database-dqiitdviae:latest",
+      "dvt/tax/test/qtittaxpaid:latest",
+      "dvt/tax/test/database-qtittaxpaid:latest",
+      "dvt/tax/test/qtittaxobjectadapter:latest",
+      "dvt/tax/test/database-qtittaxobjectadapter:latest",
+      "dvt/tax/dev/qbitttop:latest",
+      "dvt/tax/dev/database-qbitttop:latest",
+      "dvt/tax/dev/qbittreference:latest",
+      "dvt/tax/dev/database-qbittreference:latest",
+
+      ##qbpm
+      "dvt/dqcl/dev/dqqnttbpm:latest", 
+      "dvt/dqcl/dev/database-dqqnttbpm:latest",
+      "dvt/omniplatform/dev/datainstall-qbpmdesigner:latest",
+      "dvt/omniplatform/dev/database-qbpmdesigner:latest",
+      "dvt/omniplatform/dev/qbpmdesigner:latest",
+      "dvt/omniplatform/dev/database-dqbobjectdesigner:latest",
+      "dvt/omniplatform/dev/dqbobjectdesigner:latest",
+      "dvt/omniplatform/dev/qbpmcockpit:latest",
+      "dvt/omniplatform/dev/database-qbpmcockpit:latest",
+      "dvt/omniplatform/dev/humantaskui:latest",
+      "dvt/omniplatform/dev/dqhumantask:latest",
+      "dvt/omniplatform/dev/database-dqhumantask:latest",
+      "dvt/omniplatform/dev/qbpmui:22101801",
+      "dvt/omniplatform/dev/dqbpmplayer:latest",
+      "dvt/omniplatform/dev/database-dqbpmplayer:latest", 
+      "dvt/omniplatform/dev/qbapplistui:latest",
+      "dvt/omniplatform/dev/qbpmapplist:latest",
+      "dvt/omniplatform/dev/database-qbpmapplist:latest",
+      "dvt/sensortestcore/dev/dqbsdui:latest",
+      "dvt/omniplatform/dev/qeamfillingmonitoring:latest",
+      "dvt/dqcl/dev/qfmdmsecuritybpm:latest",      
+      "dvt/dqcl/dev/database-qfmdmsecuritybpm:latest",
+      "dvt/dqcl/dev/qbpmtpforqbtiqbtiprocesscorpact:latest",      
+      "dvt/dqcl/dev/database-qbpmtpforqbtiqbtiprocesscorpact:latest"
+    ]
